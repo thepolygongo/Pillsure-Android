@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MapsActivity">
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/reload"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/action_signout"
+        app:showAsAction="never"
+        android:title="sign out" />
+</menu>
