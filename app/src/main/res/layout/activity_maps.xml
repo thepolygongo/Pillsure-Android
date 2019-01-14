@@ -29,6 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pillsure"
+                android:textColor="#fff"
                 />
             <ImageView
                 android:layout_width="100dp"
@@ -67,6 +68,7 @@
                         android:layout_margin="5dp"
                         />
                     <TextView
+                        android:id="@+id/textTemperature"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Temperature: 18 \u2103"
@@ -86,6 +88,7 @@
                         android:layout_margin="5dp"
                         />
                     <TextView
+                        android:id="@+id/textBattery"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Battery: 85 \u0025"
@@ -108,55 +111,59 @@
                         android:orientation="vertical"
                         >
                         <TextView
+                            android:id="@+id/textLongitude"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Longitude: 1232345"
                             />
 
                         <TextView
+                            android:id="@+id/textLatitude"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Latitude: 1232345"
                             />
                     </LinearLayout>
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical">-->
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_margin="5dp"
-                        android:src="@drawable/alarm_clock"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Upcoming: 12h34m"
-                        android:textSize="15sp"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                    <!--<ImageView-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:layout_margin="5dp"-->
+                        <!--android:src="@drawable/alarm_clock"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/textUpcoming"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Upcoming: 12h34m"-->
+                        <!--android:textSize="15sp"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical">-->
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/timeline"
-                        android:layout_margin="5dp"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Last diliivery: 10h34m(OK)"
-                        android:textSize="15sp"
-                        android:textColor="@color/colorPrimary"
-                        />
-                </LinearLayout>
+                    <!--<ImageView-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:src="@drawable/timeline"-->
+                        <!--android:layout_margin="5dp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/textLast"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Last diliivery: 10h34m(OK)"-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
@@ -168,12 +175,12 @@
         android:background="#6bbae8"
         >
         <Button
-            android:id="@+id/buttonPolice"
+            android:id="@+id/buttonParent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Police"
-            android:drawableTop="@drawable/police_small_white"
+            android:text="Parents"
+            android:drawableTop="@drawable/couple"
             android:layout_weight="1"
             android:textColor="#fff"
             android:backgroundTint="@color/colorPrimary"

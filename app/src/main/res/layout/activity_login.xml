@@ -25,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
+            android:text="alex"
             android:inputType="text"
             android:layout_margin="10dp"
             />
@@ -35,6 +36,7 @@
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
+            android:text="alex"
             android:layout_margin="10dp"
             />
         <LinearLayout

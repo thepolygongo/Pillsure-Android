@@ -2,6 +2,7 @@ package com.pillsure.lizhe.myapplication;
 
 
 import android.app.TimePickerDialog;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -22,6 +23,9 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
     Button buttonClear;
     Button buttonSave;
 
+
+    private SharedPreferences sharedPreferences;
+    private String mPillsureId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +48,8 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
 
         buttonClear.setOnClickListener(this);
         buttonSave.setOnClickListener(this);
+
+        sharedPreferences = getApplicationContext().getSharedPreferences("pillsure", MODE_PRIVATE);
     }
 
     @Override

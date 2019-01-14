@@ -10,15 +10,30 @@
     android:padding="30dp"
     >
 
-    <EditText
-        android:id="@+id/editPhone"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Phone number"
-        android:inputType="phone"
-        android:layout_margin="10dp"
-        />
+        android:gravity="center_vertical"
+        >
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            />
 
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:textColor="#fff"
+            android:backgroundTint="@color/colorPrimary"
+            />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,10 +49,10 @@
             android:layout_weight="1"
             />
         <Button
-            android:id="@+id/buttonSend"
+            android:id="@+id/buttonVerify"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="send"
+            android:text="verify"
             android:textColor="#fff"
             android:backgroundTint="@color/colorPrimary"
             />
@@ -60,7 +75,7 @@
         android:layout_margin="10dp"
         />
     <Button
-        android:id="@+id/buttonSignup"
+        android:id="@+id/buttonReset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reset"
